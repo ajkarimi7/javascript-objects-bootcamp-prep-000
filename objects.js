@@ -1,11 +1,10 @@
-var playlist = new Object({artist: 'song title'});
+var playlist = {
+  'Foo Fighters': 'Everlong',
+  Prince: 'Purple Rain'
+}
 
-function updatePlaylist(playlist, artist, song) { 
-  playlist[artist] = song;
-  return playlist;
-} 
-
-function removeFromPlaylist(playlist, artistName) {
-  delete playlist[artistName];
+function updatePlaylist(playlist, artist, song) {
+  playlist[artist] = song
+  
   return playlist
 }
